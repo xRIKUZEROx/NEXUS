@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus - Conecta de forma profunda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación superior -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-atom logo-icon"></i>
+                <span>Nexus</span>
+            </div>
+            
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Explora Nexus...">
+            </div>
+            
+            <div class="nav-icons">
+                <div class="nav-icon-container" title="Inicio">
+                    <i class="fas fa-home nav-icon"></i>
+                    <div class="icon-tooltip">Inicio</div>
+                </div>
+                <div class="nav-icon-container" title="Conexiones" id="open-chat">
+                    <i class="fas fa-plug nav-icon"></i>
+                    <div class="icon-tooltip">Conexiones</div>
+                </div>
+                <div class="nav-icon-container" title="Descubrir">
+                    <i class="fas fa-compass nav-icon"></i>
+                    <div class="icon-tooltip">Descubrir</div>
+                </div>
+                <div class="nav-icon-container" title="Notificaciones">
+                    <i class="fas fa-bell nav-icon"></i>
+                    <div class="icon-tooltip">Notificaciones</div>
+                </div>
+                <div class="nav-icon-container" title="Crear" id="open-camera">
+                    <i class="fas fa-plus-circle nav-icon"></i>
+                    <div class="icon-tooltip">Crear</div>
+                </div>
+                <div class="nav-icon-container" title="Perfil">
+                    <i class="fas fa-user-astronaut nav-icon"></i>
+                    <div class="icon-tooltip">Perfil</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <!-- Feed principal -->
+        <div class="feed">
+            <!-- Historias -->
+            <div class="stories-container">
+                <div class="story">
+                    <div class="story-avatar">
+                        <div class="story-add">+</div>
+                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Usuario">
+                    </div>
+                    <div class="story-username">tu_nexus</div>
+                </div>
+                
+                <div class="story">
+                    <div class="story-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Usuario">
+                    </div>
+                    <div class="story-username">astro_david</div>
+                </div>
+                
+                <div class="story">
+                    <div class="story-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Usuario">
+                    </div>
+                    <div class="story-username">cosmic_ana</div>
+                </div>
+                
+                <div class="story">
+                    <div class="story-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Usuario">
+                    </div>
+                    <div class="story-username">galactic_joe</div>
+                </div>
+                
+                <div class="story">
+                    <div class="story-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Usuario">
+                    </div>
+                    <div class="story-username">stellar_maria</div>
+                </div>
+                
+                <div class="story">
+                    <div class="story-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Usuario">
+                    </div>
+                    <div class="story-username">nebula_mike</div>
+                </div>
+                
+                <div class="story">
+                    <div class="story-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Usuario">
+                    </div>
+                    <div class="story-username">quantum_lucy</div>
+                </div>
+            </div>
+            
+            <!-- Publicaciones -->
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-user">
+                        <img class="post-user-avatar" src="https://randomuser.me/api/portraits/women/5.jpg" alt="Usuario">
+                        <div class="post-username">cosmic_traveler</div>
+                    </div>
+                    <div class="post-more">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                
+                <img class="post-image" src="https://source.unsplash.com/random/600x600/?space" alt="Publicación">
+                
+                <div class="post-actions">
+                    <div class="post-actions-left">
+                        <div class="post-action-container">
+                            <i class="fas fa-heart post-action"></i>
+                            <div class="action-tooltip">Me gusta</div>
+                        </div>
+                        <div class="post-action-container">
+                            <i class="fas fa-comment-dots post-action"></i>
+                            <div class="action-tooltip">Comentar</div>
+                        </div>
+                        <div class="post-action-container">
+                            <i class="fas fa-share-nodes post-action"></i>
+                            <div class="action-tooltip">Compartir</div>
+                        </div>
+                    </div>
+                    <div class="post-actions-right">
+                        <div class="post-action-container">
+                            <i class="fas fa-bookmark post-action"></i>
+                            <div class="action-tooltip">Guardar</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post-likes">1,234 conexiones</div>
+                
+                <div class="post-caption">
+                    <span class="post-caption-username">cosmic_traveler</span>
+                    Contemplando el infinito desde mi rincón del universo. ¿Alguien más siente esta conexión cósmica? #universo #nexus
+                </div>
+                
+                <div class="post-comments">Ver las 123 conexiones</div>
+                
+                <div class="post-time">HACE 2 HORAS</div>
+                
+                <div class="post-add-comment">
+                    <input type="text" class="comment-input" placeholder="Añade una conexión...">
+                    <div class="post-button">Enviar</div>
+                </div>
+            </div>
+            
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-user">
+                        <img class="post-user-avatar" src="https://randomuser.me/api/portraits/men/5.jpg" alt="Usuario">
+                        <div class="post-username">quantum_explorer</div>
+                    </div>
+                    <div class="post-more">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                
+                <img class="post-image" src="https://source.unsplash.com/random/600x600/?galaxy" alt="Publicación">
+                
+                <div class="post-actions">
+                    <div class="post-actions-left">
+                        <div class="post-action-container">
+                            <i class="far fa-heart post-action"></i>
+                            <div class="action-tooltip">Me gusta</div>
+                        </div>
+                        <div class="post-action-container">
+                            <i class="far fa-comment-dots post-action"></i>
+                            <div class="action-tooltip">Comentar</div>
+                        </div>
+                        <div class="post-action-container">
+                            <i class="fas fa-share-nodes post-action"></i>
+                            <div class="action-tooltip">Compartir</div>
+                        </div>
+                    </div>
+                    <div class="post-actions-right">
+                        <div class="post-action-container">
+                            <i class="far fa-bookmark post-action"></i>
+                            <div class="action-tooltip">Guardar</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post-likes">2,345 conexiones</div>
+                
+                <div class="post-caption">
+                    <span class="post-caption-username">quantum_explorer</span>
+                    Cada partícula en el universo sabe que estás aquí. ¿No es asombroso? #quantum #conexión
+                </div>
+                
+                <div class="post-comments">Ver las 45 conexiones</div>
+                
+                <div class="post-time">HACE 5 HORAS</div>
+                
+                <div class="post-add-comment">
+                    <input type="text" class="comment-input" placeholder="Añade una conexión...">
+                    <div class="post-button">Enviar</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="user-profile">
+                <img class="user-avatar" src="https://randomuser.me/api/portraits/women/6.jpg" alt="Usuario">
+                <div class="user-info">
+                    <div class="username">tu_nexus</div>
+                    <div class="name">Explorador Nexus</div>
+                </div>
+                <div class="switch-button">Cambiar</div>
+            </div>
+            
+            <div class="suggestions">
+                <div class="suggestions-header">
+                    <div class="suggestions-title">Conexiones sugeridas</div>
+                    <div class="see-all">Ver todo</div>
+                </div>
+                
+                <div class="suggestion">
+                    <img class="suggestion-avatar" src="https://randomuser.me/api/portraits/men/6.jpg" alt="Usuario">
+                    <div class="suggestion-info">
+                        <div class="suggestion-username">astro_physics</div>
+                        <div class="suggestion-status">Nuevo en Nexus</div>
+                    </div>
+                    <div class="follow-button">Conectar</div>
+                </div>
+                
+                <div class="suggestion">
+                    <img class="suggestion-avatar" src="https://randomuser.me/api/portraits/women/7.jpg" alt="Usuario">
+                    <div class="suggestion-info">
+                        <div class="suggestion-username">cosmic_artist</div>
+                        <div class="suggestion-status">Te sigue</div>
+                    </div>
+                    <div class="follow-button">Conectar</div>
+                </div>
+                
+                <div class="suggestion">
+                    <img class="suggestion-avatar" src="https://randomuser.me/api/portraits/men/7.jpg" alt="Usuario">
+                    <div class="suggestion-info">
+                        <div class="suggestion-username">quantum_poet</div>
+                        <div class="suggestion-status">Conectado con astro_david</div>
+                    </div>
+                    <div class="follow-button">Conectar</div>
+                </div>
+                
+                <div class="suggestion">
+                    <img class="suggestion-avatar" src="https://randomuser.me/api/portraits/women/8.jpg" alt="Usuario">
+                    <div class="suggestion-info">
+                        <div class="suggestion-username">stellar_designer</div>
+                        <div class="suggestion-status">Conectado con cosmic_ana</div>
+                    </div>
+                    <div class="follow-button">Conectar</div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Información</a>
+                    <a href="#" class="footer-link">Ayuda</a>
+                    <a href="#" class="footer-link">Prensa</a>
+                    <a href="#" class="footer-link">API</a>
+                    <a href="#" class="footer-link">Empleo</a>
+                    <a href="#" class="footer-link">Privacidad</a>
+                    <a href="#" class="footer-link">Condiciones</a>
+                    <a href="#" class="footer-link">Ubicaciones</a>
+                    <a href="#" class="footer-link">Conexiones destacadas</a>
+                    <a href="#" class="footer-link">Hashtags</a>
+                    <a href="#" class="footer-link">Idioma</a>
+                </div>
+                <div>© 2023 NEXUS</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Barra de navegación inferior (móvil) -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-icons">
+            <div class="mobile-nav-icon-container" title="Inicio">
+                <i class="fas fa-home mobile-nav-icon"></i>
+            </div>
+            <div class="mobile-nav-icon-container" title="Explorar">
+                <i class="fas fa-search mobile-nav-icon"></i>
+            </div>
+            <div class="mobile-nav-icon-container" title="Crear" id="mobile-open-camera">
+                <i class="fas fa-plus-circle mobile-nav-icon"></i>
+            </div>
+            <div class="mobile-nav-icon-container" title="Notificaciones">
+                <i class="fas fa-bell mobile-nav-icon"></i>
+            </div>
+            <div class="mobile-nav-icon-container" title="Perfil">
+                <i class="fas fa-user-astronaut mobile-nav-icon"></i>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal de cámara -->
+    <div class="camera-modal" id="camera-modal">
+        <div class="camera-container">
+            <div class="camera-header">
+                <div class="camera-close" id="close-camera">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div>Nueva Conexión</div>
+                <div></div>
+            </div>
+            <div class="camera-preview">
+                <i class="fas fa-camera" style="font-size: 50px; color: #5a5a5a;"></i>
+            </div>
+            <div class="camera-controls">
+                <button class="camera-button">
+                    <i class="fas fa-circle"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal de chat -->
+    <div class="chat-modal" id="chat-modal">
+        <div class="chat-header">
+            <div>Conexiones</div>
+            <div class="chat-close" id="close-chat">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="chat-messages">
+            <div class="chat-empty-state">
+                <i class="fas fa-plug"></i>
+                <div class="chat-empty-title">Tus Conexiones</div>
+                <div class="chat-empty-text">Envía mensajes privados a tus conexiones o crea grupos.</div>
+                <button class="chat-empty-button">Iniciar Conexión</button>
+            </div>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" class="chat-input" placeholder="Escribe un mensaje...">
+            <div class="chat-send">
+                <i class="fas fa-paper-plane"></i>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
